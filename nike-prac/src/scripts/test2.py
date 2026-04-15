@@ -42,6 +42,10 @@ display(df)
 
 # COMMAND ----------
 
+dbutils.library.restartPython()
+
+# COMMAND ----------
+
 dbutils.widgets.text("integration_name", "test")
 
 dbutils.widgets.dropdown(
